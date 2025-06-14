@@ -1,0 +1,63 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    transition: background-color 0.4s ease-in-out;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4fff8;
+}
+
+.canvas {
+     background-color: #f4fff8;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 12px rgba(1, 0, 0, 0.9);
+}
+
+/* Color buttons */
+#red { background-color: #e74c3c; }
+#blue { background-color: #3498db; }
+#grey { background-color: #7f8c8d; }
+#yellow { background-color: #f1c40f; }
+#purple { background-color: #9b59b6; }
+#green { background-color: #2ecc71; }
+
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+span:not(.button) {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
